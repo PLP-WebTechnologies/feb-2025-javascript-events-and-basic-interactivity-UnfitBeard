@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the JavaScript Playground 🎉</h1>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section id="events">
+      <h2>🎈 Event Handling</h2>
+      <button id="changeTextBtn">Click Me</button>
+      <div id="hoverBox">Hover over me!</div>
+      <input type="text" id="keypressInput" placeholder="Type something..." />
+      <p id="keypressResult"></p>
+      <button id="secretBtn">Double-Click Me!</button>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section id="interactive">
+      <h2>🎮 Interactive Gallery</h2>
+      <div class="tabs">
+        <button class="tab-btn" data-tab="tab1">Tab 1</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">📸 This is Tab 1 content.</div>
+      <div class="tab-content" id="tab2">🌄 This is Tab 2 content.</div>
+      <div class="tab-content" id="tab3">🎨 This is Tab 3 content.</div>
+    </section>
+
+    <!-- Form Validation -->
+    <section id="form-section">
+      <h2>📋 Form Validation</h2>
+      <form id="signupForm">
+        <label>
+          Email:
+          <input type="email" id="email" required />
+          <span class="feedback" id="emailFeedback"></span>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required minlength="8" />
+          <span class="feedback" id="passwordFeedback"></span>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JavaScript Playground. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
